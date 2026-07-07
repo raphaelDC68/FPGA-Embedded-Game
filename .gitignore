@@ -1,0 +1,43 @@
+# OS et IDE
+.vscode/
+.ccls-cache/
+.DS_Store
+
+# Fichiers compilés C et Tools
+*.o
+*.elf
+*.bin
+*.out
+*.axf
+*.map
+*.lst
+*.lib
+
+# Archives à ne pas versionner
+*.7z
+*.zip
+*.rar
+
+# Xilinx Vivado - Fichiers et dossiers générés
+*.jou
+*.log
+*.str
+*.tmp
+.Xil/
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.gen/
+*.ip_user_files/
+sim_scripts/
+
+# Fichiers de cache IP Core
+*.dcp
+*.mif
+*.veo
+*.vho
+*.xml
+*.exe
+*.bit
+*.lnk
