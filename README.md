@@ -11,7 +11,7 @@ The hardware foundation was written entirely in VHDL to support the game's visua
 * **Strict Memory Management:** To respect the FPGA's strict 1800 kbits memory limit, I implemented a custom scaling logic in VHDL that takes a 120x160 pixel background image and scales it by a factor of 4 directly on the screen.
 * **Dynamic Bootloader:** Integrated a custom bootloader mapped to a 4096-word RAM block. This allowed the dynamic loading of compiled C binaries via a serial port without needing to regenerate the heavy hardware bitstream for every software iteration, drastically improving development speed.
 
-## Software Logic & "Proto-AI" (C)
+## Software Logic (C)
 The game mechanics were written in C and cross-compiled to run on a **Plasma soft-core processor** embedded within the FPGA.
 * **Physics & Collisions:** Handled real-time hardware inputs (physical FPGA buttons) to control the player's movements, jumps, and ball collision physics.
 * **Dynamic Opponent (Bot):** Programmed a standalone automated opponent that actively tracks the ball's position. To enhance the user experience, the bot features a dynamic difficulty system: its tracking speed and reaction time increment every time the player scores a goal.
